@@ -119,6 +119,19 @@
         </ul>
     </section>
 
+    <section>
+
+
+    <video width="320" height="240" controls>
+    <source src="heat_equation.mp4" type="video/mp4">
+    </video>
+
+
+
+    </section>
+
+    
+
     <footer>
         <p>Find me on <a href="https://github.com/jamesafful">GitHub</a> | <a href="https://linkedin.com/in/james-afful-745247179">LinkedIn</a> | <a href="https://instagram.com/_james_afful">Instagram</a></p>  | <a href="https://twitter.com/_james_afful">Twitter</a>
     </footer>
