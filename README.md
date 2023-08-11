@@ -108,11 +108,17 @@
         <ul>
             <li><a href="#link-to-your-project-1">Project 1</a>: Brief description of project 1.</li>
             <li><a href="#link-to-your-project-2">Project 2</a>: Brief description of project 2.</li>
+            <li><a href="#link-to-your-project-3">Project 2</a>: Brief description of project 3.</li>
+            <li><a href="#link-to-your-project-4">Project 2</a>: Brief description of project 4.</li>
+            <li><a href="#link-to-your-project-5">Project 2</a>: Brief description of project 5.</li>
+            <li><a href="#link-to-your-project-6">Project 2</a>: Brief description of project 6.</li>
+            <li><a href="#link-to-your-project-7">Project 2</a>: Brief description of project 7.</li>
+
         </ul>
     </section>
 
     <footer>
-        <p>Find me on <a href="https://github.com/jamesafful">GitHub</a> | <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a> | <a href="https://instagram.com/_james_afful">Instagram</a></p>
+        <p>Find me on <a href="https://github.com/jamesafful">GitHub</a> | <a href="https://linkedin.com/in/james-afful-745247179">LinkedIn</a> | <a href="https://instagram.com/_james_afful">Instagram</a></p>  | <a href="https://twitter.com/_james_afful">Twitter</a>
     </footer>
 
 </body>
