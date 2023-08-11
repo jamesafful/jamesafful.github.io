@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Afful - Demo Page</title>
+    <title>Hello, hello! - Demo Page</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -42,7 +42,7 @@
 
     <section>
         <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a software developer passionate about [specific technologies or topics]. Check out my projects below!</p>
+        <p>Hello! I'm James Afful, a mechanical engineering graduate student at Iowa State University, and I love to talk about #CFD (Computational Fluid Dynamics), #HPC (High-Performance Computing), and #ML (Machine Learning). Here, I will talk about my professional life and other things I do with my time. Check out my projects below!</p>
 
         <h2>Projects</h2>
         <ul>
