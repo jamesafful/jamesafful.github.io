@@ -1,0 +1,158 @@
+
+dt = 1
+totalT = 1000
+
+gp_handle = 0
+
+
+#HeatTimestepper="BDF2"
+#NSTimestepper = "BDF2"
+NavierStokesSolverType = "rbvmsNS"
+HeatSolverType = "rbvmsHT"
+SolveHT = false
+SolveNS = true
+
+##########################
+elemOrder = 2
+channel_mesh = {
+  refine_lvl_base = 4
+  refine_lvl_channel_wall = 4
+  enable_subda = false
+  min = [0, 0, 0]
+  max = [1, 1, 1]
+  refine_walls = true
+}
+
+
+### Coe setup
+NondimensionType = "mix_conv"
+ramping_parameter = [0.0, 0.5]
+Cb_e = 20
+Ci_e = 36
+Cb_f = 20
+Ci_f = 36
+
+Re = 100.0
+Gr = 10000.0
+Pe = 100.0
+
+
+tauM_scale = 1
+G_dir = 1
+
+
+### block iteration
+blockTolerance = 1e-3
+iterMaxBlock = 5
+
+#geometries = (
+#  {
+#    mesh_path = "./temp/cube.stl"
+#    name = "cube"
+#    is_static = true
+#    position = [3, 1, 1]
+#    type = "meshobject"
+#    refine_lvl = 6
+#    gp_level = 0
+#    bc_type_V = ["dirichlet", "dirichlet", "dirichlet", "dirichlet", "dirichlet"]
+#    dirichlet_V = [0.0, 0.0, 0.0, 0.0, 0.0]
+#  }
+#)
+### BCs
+boundary = (
+  {
+    side = "x-"
+    vel_type = "no_slip"
+    #temperature_type = "dirichlet"
+    #temperature = 1
+    ifRefine = true
+  },
+  {
+    side = "x+"
+    vel_type = "no_slip"
+    #pressure_type = "dirichlet"
+    #pressure = 0
+    ifRefine = true
+  },
+  {
+    side = "y-"
+    vel_type = "no_slip"
+    ifRefine = true
+  },
+  {
+    side = "y+"
+    vel_type = "dirichlet"
+    wall_vel = [1.0, 0.0, 0.0]
+    ifRefine = true
+  }
+#  {
+#    side = "z-"
+#    vel_type = "no_slip"
+#  },
+#  {
+#    side = "z+"
+#    vel_type = "no_slip"
+#  }
+)
+
+### ICs
+initial_condition = {
+  vel_ic_type = "user_defined"
+  vel_ic = [0.0, 0.0, 0.0]
+  temperature_ic_type = "user_defined"
+  temperature_ic = 0.0
+  pressure_ic_type = "user_defined"
+  pressure_ic = 0.0
+}
+
+OutputStartTime = 1e8
+OutputInterval = 1
+CheckpointInterval = 10
+SurfaceMonitor = [2]
+#################### solver setting ####################
+solver_options_ns = {
+  snes_atol = 1e-8
+  snes_rtol = 1e-8
+  snes_stol = 1e-8
+  snes_max_it = 10
+  snes_max_funcs = 80000
+  snes_max_linear_solve_fail = 4
+
+  ksp_diagonal_scale = True
+  ksp_diagonal_scale_fix = True
+  ksp_max_it = 250
+  ksp_atol = 1e-10
+  ksp_rtol = 1e-10
+  ksp_type = "bcgs"
+  pc_type = "asm"
+  #sub_pc_type = "lu"
+  #multigrid
+  #ksp_type = "bcgs"
+  #pc_type = "gamg"
+  #pc_gamg_asm_use_agg = True
+  #mg_levels_ksp_type = "bcgs"
+  #mg_levels_pc_type = "asm"
+  #mg_levels_sub_pc_type = "lu"
+  #mg_levels_ksp_max_it = 50
+  #direct solver
+  #ksp_type = "bcgs"
+  #pc_type = "lu"
+  #pc_factor_mat_solver_package = "mumps"
+  #pc_factor_levels = 3
+  # monitor
+  snes_monitor = ""
+  snes_converged_reason = ""
+  #ksp_monitor = ""
+  #ksp_converged_reason = ""
+};
+solver_options_ht = {
+  ksp_max_it = 2000
+  ksp_type = "bcgs"
+  pc_type = "none"
+  ksp_atol = 1e-15
+  ksp_rtol = 1e-15
+  #ksp_monitor = ""
+  ksp_converged_reason = ""
+}
+
+
