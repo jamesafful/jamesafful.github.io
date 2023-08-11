@@ -53,7 +53,7 @@
     </section>
 
     <footer>
-        <p>Find me on <a href="https://github.com/yourusername">GitHub</a> | <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a></p>
+        <p>Find me on <a href="https://github.com/jamesafful">GitHub</a> | <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a></p> | <a href="https://instagram.com/_james_afful">Instagram</a></p>
     </footer>
 
 </body>
