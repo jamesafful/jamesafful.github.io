@@ -18,6 +18,22 @@
             margin-bottom: 20px;
         }
 
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
         h1 {
             margin: 0;
         }
@@ -36,9 +52,15 @@
 <body>
 
     <header>
-        <h1>Your Name</h1>
+        <h1>James Afful</h1>
         <p>Welcome to my GitHub page</p>
     </header>
+
+    <nav>
+        <a href="professional.html">Professional</a>
+        <a href="personal.html">Personal</a>
+        <a href="#">Coming Soon</a>
+    </nav>
 
     <section>
         <h2>About Me</h2>
@@ -53,12 +75,9 @@
     </section>
 
     <footer>
-        <p>Find me on <a href="https://github.com/jamesafful">GitHub</a> | <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a></p> | <a href="https://instagram.com/_james_afful">Instagram</a></p>
+        <p>Find me on <a href="https://github.com/jamesafful">GitHub</a> | <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a> | <a href="https://instagram.com/_james_afful">Instagram</a></p>
     </footer>
 
 </body>
 
 </html>
-
-
-
