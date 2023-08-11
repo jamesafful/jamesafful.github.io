@@ -1,12 +1,10 @@
-# jamesafful.github.io
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Demo Page</title>
+    <title>James Afful - Demo Page</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -39,7 +37,7 @@
 
     <header>
         <h1>Your Name</h1>
-        <p>Welcome to my GitHub demo page</p>
+        <p>Welcome to my GitHub page</p>
     </header>
 
     <section>
