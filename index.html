@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>James Afful — Computational Science & Mechanical Engineering</title>
+  <meta name="description" content="James Afful — Mechanical Engineering PhD (Computational Science). CFD, HPC, AI for infrastructure, energy, public health, and agricultural digital twins." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc',
+              400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(2,132,199,.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { backdrop-filter: blur(8px); background: linear-gradient(120deg, rgba(255,255,255,.85), rgba(255,255,255,.7)); }
+    .tag { border:1px solid rgba(2,132,199,.25); }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="font-extrabold tracking-tight text-xl text-brand-800">James Afful</a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#work" class="hover:text-brand-700">Work</a>
+          <a href="#publications" class="hover:text-brand-700">Publications</a>
+          <a href="#cv" class="hover:text-brand-700">CV</a>
+          <a href="#talks" class="hover:text-brand-700">Talks</a>
+          <a href="#contact" class="hover:text-brand-700">Contact</a>
+        </nav>
+        <a href="#contact" class="inline-flex items-center rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-semibold shadow-soft hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-400">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-brand-50"></div>
+    <div class="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand-700 bg-brand-100 rounded-full px-3 py-1 mb-4">CFD • HPC • AI</div>
+          <h1 class="text-4xl md:text-6xl font-black leading-tight text-slate-900">High‑fidelity <span class="text-brand-700">CFD</span> & <span class="text-brand-700">AI</span> for resilient infrastructure, clean energy, and public health</h1>
+          <p class="mt-6 text-lg text-slate-600 max-w-prose">Ph.D. researcher at Iowa State University (Computational Science) with experience at Lawrence Livermore National Laboratory. I build scalable simulation and AI pipelines that move from fundamental research to real‑world policy and operations.</p>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="tag inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm"><span class="h-2 w-2 rounded-full bg-brand-600"></span>ASHRAE‑aligned K‑12 ventilation models</span>
+            <span class="tag inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm"><span class="h-2 w-2 rounded-full bg-brand-600"></span>LLNL isotope‑separation CFD</span>
+            <span class="tag inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm"><span class="h-2 w-2 rounded-full bg-brand-600"></span>NeRF crop digital twins</span>
+          </div>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#work" class="rounded-xl bg-slate-900 text-white px-5 py-3 font-semibold hover:bg-slate-800">See featured work</a>
+            <a href="#publications" class="rounded-xl border border-slate-300 text-slate-800 px-5 py-3 font-semibold hover:border-slate-400">Publications</a>
+          </div>
+        </div>
+        <div class="md:pl-8">
+          <div class="glass rounded-3xl border border-white/60 p-6 shadow-soft">
+            <div class="grid grid-cols-2 gap-4 text-center">
+              <div class="p-4 rounded-2xl bg-white border border-slate-200">
+                <div class="text-3xl font-black">25<span class="text-brand-600 align-super text-xl">+</span></div>
+                <div class="text-xs text-slate-500 mt-1">Citations (Plant Phenomics 2023)</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-slate-200">
+                <div class="text-3xl font-black">$25M</div>
+                <div class="text-xs text-slate-500 mt-1">School retrofit impact</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-slate-200">
+                <div class="text-3xl font-black">10<span class="text-brand-600 align-super text-xl">x</span></div>
+                <div class="text-xs text-slate-500 mt-1">Speedups via HPC pipelines</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white border border-slate-200">
+                <div class="text-3xl font-black">3</div>
+                <div class="text-xs text-slate-500 mt-1">Active reviewing roles</div>
+              </div>
+            </div>
+            <div class="mt-6 p-4 rounded-2xl bg-brand-50 border border-brand-100 text-sm text-brand-900">
+              Available for collaborations, internships, and consulting in 2025.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work -->
+  <section id="work" class="py-20 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between gap-6 mb-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Featured Work</h2>
+        <a href="#projects" class="text-brand-700 font-semibold">All projects →</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="group rounded-3xl border border-slate-200 overflow-hidden shadow-soft hover:shadow-lg transition-shadow bg-white">
+          <div class="h-40 bg-gradient-to-br from-brand-200 to-brand-400"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold group-hover:text-brand-800">K‑12 Classroom Ventilation (CFD → Policy)</h3>
+            <p class="mt-2 text-sm text-slate-600">High‑fidelity CFD of real classrooms informing ASHRAE 241 guidelines and state‑level retrofits across Iowa/DMPS.</p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+              <li class="tag px-2 py-1 rounded-full">OpenFOAM</li>
+              <li class="tag px-2 py-1 rounded-full">EnergyPlus</li>
+              <li class="tag px-2 py-1 rounded-full">MPI/HPC</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="group rounded-3xl border border-slate-200 overflow-hidden shadow-soft hover:shadow-lg transition-shadow bg-white">
+          <div class="h-40 bg-gradient-to-br from-slate-200 to-slate-400"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold group-hover:text-brand-800">AVLIS Isotope‑Separation (LLNL)</h3>
+            <p class="mt-2 text-sm text-slate-600">Ultra‑high vacuum laser isotope‑separation modeling; integrated into national‑interest evaluation workflows.</p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+              <li class="tag px-2 py-1 rounded-full">CFD</li>
+              <li class="tag px-2 py-1 rounded-full">UHV</li>
+              <li class="tag px-2 py-1 rounded-full">Python</li>
+            </ul>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="group rounded-3xl border border-slate-200 overflow-hidden shadow-soft hover:shadow-lg transition-shadow bg-white">
+          <div class="h-40 bg-gradient-to-br from-emerald-200 to-emerald-400"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold group-hover:text-brand-800">NeRF Digital Twins for Crops</h3>
+            <p class="mt-2 text-sm text-slate-600">Field‑deployable NeRF pipeline for 3D plant geometry reconstruction; open research artifacts and benchmarks.</p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+              <li class="tag px-2 py-1 rounded-full">PyTorch</li>
+              <li class="tag px-2 py-1 rounded-full">NeRF</li>
+              <li class="tag px-2 py-1 rounded-full">Photogrammetry</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section id="projects" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-extrabold mb-6">Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Publications</h2>
+      <div class="mt-8 space-y-6" id="pubList"></div>
+    </div>
+  </section>
+
+  <!-- CV / Education & Experience -->
+  <section id="cv" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">CV Highlights</h2>
+      <div class="grid md:grid-cols-3 gap-10 mt-10">
+        <div class="md:col-span-2 space-y-8">
+          <div>
+            <h3 class="text-xl font-bold mb-3">Education</h3>
+            <ul class="space-y-3 text-slate-700">
+              <li><strong>Iowa State University</strong> — Ph.D., Mechanical Engineering (Computational Science), Expected 2026</li>
+              <li><strong>KNUST</strong> — B.Sc., Mechanical Engineering, 2021</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-3">Experience</h3>
+            <ul class="space-y-3 text-slate-700">
+              <li><strong>Lawrence Livermore National Laboratory (LLNL)</strong> — Research Scholar, National Security Engineering Division (Summer 2024)</li>
+              <li><strong>Center for Building Energy Research, ISU</strong> — Graduate Research Assistant (2022–Present)</li>
+              <li><strong>Engineers Without Borders (ISU & KNUST)</strong> — VP / Project Lead (2018–2021)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-3">Honors & Memberships</h3>
+            <p class="text-slate-700">Sigma Xi • Pi Tau Sigma • ASME VOLT • APS • AIAA • US‑RSE</p>
+          </div>
+        </div>
+        <aside class="md:col-span-1">
+          <div class="rounded-3xl border border-slate-200 p-6 sticky top-24">
+            <h3 class="text-lg font-bold">Download CV</h3>
+            <p class="text-sm text-slate-600 mt-2">Latest curriculum vitae as PDF.</p>
+            <a id="cvDownload" href="#" class="mt-4 inline-flex items-center justify-center w-full rounded-xl bg-brand-600 text-white px-4 py-2.5 font-semibold hover:bg-brand-700">Download</a>
+            <div class="mt-4 text-xs text-slate-500">Updated: <span id="cvUpdated">2025</span></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Talks -->
+  <section id="talks" class="py-20 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Talks & Presentations</h2>
+      <ul class="mt-8 grid md:grid-cols-2 gap-4 text-slate-700" id="talkList"></ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Let’s collaborate</h2>
+          <p class="mt-4 text-slate-600">Open to collaborations in CFD/HPC/AI, internships, and consulting engagements. Based in Ames, IA.</p>
+          <div class="mt-8 space-y-3 text-slate-700">
+            <div><span class="font-semibold">Email:</span> <a class="text-brand-700 hover:underline" href="mailto:jamezafful@gmail.com">jamezafful@gmail.com</a></div>
+            <div><span class="font-semibold">Phone:</span> <a class="text-brand-700" href="tel:+15155679863">+1 (515) 567‑9863</a></div>
+            <div><span class="font-semibold">Location:</span> Ames, IA</div>
+          </div>
+        </div>
+        <form class="rounded-3xl border border-slate-200 p-6 bg-white shadow-soft" netlify>
+          <div class="grid grid-cols-1 gap-4">
+            <label class="text-sm font-semibold">Name
+              <input class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required />
+            </label>
+            <label class="text-sm font-semibold">Email
+              <input type="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required />
+            </label>
+            <label class="text-sm font-semibold">Message
+              <textarea class="mt-1 w-full min-h-[120px] rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required></textarea>
+            </label>
+            <button class="mt-2 inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-4 py-2.5 font-semibold hover:bg-slate-800" type="submit">Send</button>
+            <p class="text-xs text-slate-500">This form uses static hosting (Netlify‑style). For GitHub Pages, connect a form service (e.g., Formspree) or link your email.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-6 text-sm text-slate-500 flex flex-wrap items-center justify-between gap-4">
+      <div>© <span id="year"></span> James Afful</div>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-brand-700" href="#">Google Scholar</a>
+        <a class="hover:text-brand-700" href="#">LinkedIn</a>
+        <a class="hover:text-brand-700" href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic content assembled from a lightweight JSON structure you can edit inline or load from /data/*.json later
+    const projects = [
+      { title: 'CFD → Policy: K‑12 Ventilation', blurb: 'CFD of real classrooms to guide ASHRAE‑aligned retrofits; scripts and reproducible cases.', tags: ['OpenFOAM','EnergyPlus','MPI/HPC'] },
+      { title: 'LLNL AVLIS Isotope‑Separation', blurb: 'Laser isotope‑separation modeling under UHV conditions; high‑fidelity transport.', tags: ['CFD','UHV','Python'] },
+      { title: 'NeRF Crop Digital Twins', blurb: 'Evaluating NeRFs for robust 3D plant reconstruction in field conditions.', tags: ['PyTorch','NeRF','Computer Vision'] },
+      { title: 'CFD‑EnergyPlus Vegetation Models', blurb: 'Coupled microclimate modeling integrating vegetation effects into energy simulation.', tags: ['CFD','EnergyPlus','Urban Microclimate'] },
+    ];
+
+    const pubs = [
+      {
+        authors: 'Arshad, Jubery, Afful, Jignasu, Balu, Ganapathysubramanian, Sarkar, Krishnamurthy',
+        title: 'Evaluating Neural Radiance Fields for 3D Plant Geometry Reconstruction in Field Conditions',
+        venue: 'Plant Phenomics, 2023',
+        link: '#'
+      },
+      {
+        authors: 'Jignasu, Herron, Jubery, Afful, Balu, Ganapathysubramanian, Sarkar, Krishnamurthy',
+        title: 'Plant Geometry Reconstruction from Field Data using NeRFs',
+        venue: 'AAAI AI for Agriculture & Food Systems Workshop, 2023',
+        link: '#'
+      },
+      { authors: 'Afful', title: 'ExplainBench: A Benchmark Framework for Local Model Explanations in Fairness‑Critical Applications', venue: 'arXiv preprint', link: '#'},
+      { authors: 'Afful', title: 'A Review of HPC‑Accelerated CFD in National Security and Defense', venue: 'arXiv preprint', link: '#'},
+    ];
+
+    const talks = [
+      'USNCCM18 — CFD for K‑12 Ventilation (invited)',
+      'AAAI 2023 — NeRF‑based Digital Twins for Crops',
+      'International HPC Summer School — Kobe, Japan'
+    ];
+
+    // Render helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const grid = document.getElementById('projectGrid');
+    projects.forEach(p => {
+      const el = document.createElement('article');
+      el.className = 'rounded-3xl border border-slate-200 p-6 bg-white shadow-soft hover:shadow-lg transition-shadow';
+      el.innerHTML = `
+        <h3 class="text-lg font-bold">${p.title}</h3>
+        <p class="mt-2 text-sm text-slate-600">${p.blurb}</p>
+        <ul class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+          ${p.tags.map(t => `<li class='tag px-2 py-1 rounded-full'>${t}</li>`).join('')}
+        </ul>`;
+      grid.appendChild(el);
+    });
+
+    const pubList = document.getElementById('pubList');
+    pubs.forEach(p => {
+      const el = document.createElement('div');
+      el.className = 'rounded-2xl border border-slate-200 p-5 bg-white';
+      el.innerHTML = `
+        <div class="text-sm text-slate-600">${p.authors}</div>
+        <div class="text-base md:text-lg font-semibold mt-1">${p.title}</div>
+        <div class="text-sm text-slate-500">${p.venue}</div>
+        <a class="inline-block mt-3 text-sm font-semibold text-brand-700 hover:underline" href="${p.link}">View</a>`;
+      pubList.appendChild(el);
+    });
+
+    const talkList = document.getElementById('talkList');
+    talks.forEach(t => {
+      const li = document.createElement('li');
+      li.className = 'rounded-2xl border border-slate-200 p-5 bg-white';
+      li.textContent = t;
+      talkList.appendChild(li);
+    });
+
+    // CV download placeholder — replace with your hosted file in /assets/cv.pdf
+    document.getElementById('cvDownload').addEventListener('click', (e) => {
+      const url = 'assets/James_Afful_CV.pdf'; // update after uploading
+      if (url === '#' || !url) {
+        e.preventDefault();
+        alert('Add your CV PDF at /assets/James_Afful_CV.pdf and update the link.');
+      }
+    });
+  </script>
+</body>
+</html>

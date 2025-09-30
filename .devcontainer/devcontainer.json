@@ -1,0 +1,25 @@
+{
+  "name": "JamesAfful Site",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "prettier.singleQuote": true
+      }
+    }
+  },
+  "forwardPorts": [5500],
+  "portsAttributes": {
+    "5500": { "label": "Local Preview", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "npm i -D live-server"
+}
