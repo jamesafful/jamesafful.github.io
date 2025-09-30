@@ -225,19 +225,22 @@
             <div><span class="font-semibold">Location:</span> Ames, IA</div>
           </div>
         </div>
-        <form class="rounded-3xl border border-slate-200 p-6 bg-white shadow-soft" netlify>
+        <form class="rounded-3xl border border-slate-200 p-6 bg-white shadow-soft" method="POST" action="https://formspree.io/f/mpwydjqz">
           <div class="grid grid-cols-1 gap-4">
             <label class="text-sm font-semibold">Name
-              <input class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required />
+              <input name="name" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required />
             </label>
+            <input type="hidden" name="_subject" value="Portfolio Contact" />
+            <input type="text" name="_gotcha" class="hidden" tabindex="-1" aria-hidden="true" />
             <label class="text-sm font-semibold">Email
-              <input type="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required />
+              <input name="email" type="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required />
             </label>
             <label class="text-sm font-semibold">Message
-              <textarea class="mt-1 w-full min-h-[120px] rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required></textarea>
+              <textarea name="message" class="mt-1 w-full min-h-[120px] rounded-xl border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-400 focus:outline-none" required></textarea>
             </label>
+            <input type="hidden" name="_next" value="https://jamesafful.github.io/#contact" />
             <button class="mt-2 inline-flex items-center justify-center rounded-xl bg-slate-900 text-white px-4 py-2.5 font-semibold hover:bg-slate-800" type="submit">Send</button>
-            <p class="text-xs text-slate-500">This form uses static hosting (Netlify‑style). For GitHub Pages, connect a form service (e.g., Formspree) or link your email.</p>
+            <p class="text-xs text-slate-500">Form is powered by Formspree. You’ll receive a confirmation on submission.</p>
           </div>
         </form>
       </div>
@@ -249,9 +252,9 @@
     <div class="max-w-7xl mx-auto px-6 text-sm text-slate-500 flex flex-wrap items-center justify-between gap-4">
       <div>© <span id="year"></span> James Afful</div>
       <div class="flex items-center gap-4">
-        <a class="hover:text-brand-700" href="#">Google Scholar</a>
-        <a class="hover:text-brand-700" href="#">LinkedIn</a>
-        <a class="hover:text-brand-700" href="#">GitHub</a>
+        <a class="hover:text-brand-700" href="https://scholar.google.com/citations?user=y0fEtGwAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="hover:text-brand-700" href="https://www.linkedin.com/in/james-afful-745247179/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="hover:text-brand-700" href="https://github.com/jamesafful" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </footer>
@@ -326,10 +329,10 @@
 
     // CV download placeholder — replace with your hosted file in /assets/cv.pdf
     document.getElementById('cvDownload').addEventListener('click', (e) => {
-      const url = 'assets/James_Afful_CV.pdf'; // update after uploading
+      const url = 'assets/Afful-SC-CV.pdf'; // update after uploading
       if (url === '#' || !url) {
         e.preventDefault();
-        alert('Add your CV PDF at /assets/James_Afful_CV.pdf and update the link.');
+        alert('Add your CV PDF at /assets/Afful-SC-CV.pdf and update the link.');
       }
     });
   </script>
